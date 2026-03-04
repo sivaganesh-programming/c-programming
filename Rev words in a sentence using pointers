@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char str[]="Hello World";
+    char *words[10]; int n=0;
+    char *token=strtok(str," ");
+    while(token){ words[n++]=token; token=strtok(NULL," "); }
+    for(int i=n-1;i>=0;i--) printf("%s ", words[i]);
+    return 0;
+}

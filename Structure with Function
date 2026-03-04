@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+struct Student {
+    int roll;
+};
+
+void display(struct Student s) {
+    printf("Roll=%d", s.roll);
+}
+
+int main() {
+    struct Student s = {10};
+    display(s);
+    return 0;
+}

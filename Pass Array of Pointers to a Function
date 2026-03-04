@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void display(char *names[]) {
+    for(int i=0;i<3;i++)
+        printf("%s\n", names[i]);
+}
+
+int main() {
+    char *names[] = {"Ram","Sam","Tom"};
+    display(names);
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+struct Student {
+    int roll;
+};
+
+int main() {
+    struct Student s = {5};
+    struct Student *ptr = &s;
+
+    printf("Roll=%d", ptr->roll);
+    return 0;
+}

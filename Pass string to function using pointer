@@ -1,0 +1,7 @@
+#include <stdio.h>
+void display(char *str){ printf("%s", str); }
+int main(){
+    char str[]="Hello";
+    display(str);
+    return 0;
+}

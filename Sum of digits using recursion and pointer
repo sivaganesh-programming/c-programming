@@ -1,0 +1,11 @@
+#include <stdio.h>
+int sumDigits(int *n){
+    if(*n==0) return 0;
+    int temp=*n %10; *n/=10;
+    return temp + sumDigits(n);
+}
+int main(){
+    int n=123;
+    printf("Sum=%d", sumDigits(&n));
+    return 0;
+}

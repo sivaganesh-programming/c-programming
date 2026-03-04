@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n = 5;
+    int *ptr;
+    int sum = 0;
+
+    // Allocate memory dynamically
+    ptr = (int *)malloc(n * sizeof(int));
+
+    // Assign values
+    ptr[0] = 10;
+    ptr[1] = 20;
+    ptr[2] = 30;
+    ptr[3] = 40;
+    ptr[4] = 50;
+
+    // Calculate sum
+    for(int i = 0; i < n; i++) {
+        sum += ptr[i];
+    }
+
+    printf("Sum = %d\n", sum);
+    printf("Average = %.2f", (float)sum / n);
+
+    // Free allocated memory
+    free(ptr);
+
+    return 0;
+}

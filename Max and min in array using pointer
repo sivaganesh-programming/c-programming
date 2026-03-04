@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    int arr[]={5,10,2,8}, *p=arr;
+    int max=*p, min=*p;
+    for(int i=0;i<4;i++){
+        if(*(p+i)>max) max=*(p+i);
+        if(*(p+i)<min) min=*(p+i);
+    }
+    printf("Max=%d Min=%d", max,min);
+    return 0;
+}

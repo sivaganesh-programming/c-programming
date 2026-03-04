@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct Student {
+    int roll;
+    float marks;
+};
+
+void display(struct Student s) {
+    printf("Roll=%d Marks=%.1f",s.roll,s.marks);
+}
+
+int main() {
+    struct Student s1={1,85.5};
+    display(s1);
+    return 0;
+}

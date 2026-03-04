@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+struct Date {
+    int day, month;
+};
+
+struct Student {
+    int roll;
+    struct Date d;
+};
+
+int main() {
+    struct Student s = {1, {28, 2}};
+
+    printf("Date=%d/%d", s.d.day, s.d.month);
+    return 0;
+}
